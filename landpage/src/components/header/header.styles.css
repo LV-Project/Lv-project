@@ -1,0 +1,44 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #171717;
+    font-size: x-large;
+}
+
+.logo{
+    float: left;
+    
+    font-weight: bold;
+}
+
+.logo a{
+    color:#FE5F55;
+}
+
+.logo a:hover{
+    color: white ;
+}
+
+li {
+    float: right;
+    margin-left: 50px;
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+
+li a:hover {
+    background-color: #FE5F55;;
+}
+
+

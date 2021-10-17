@@ -3,14 +3,14 @@ import './jumbotron.styles.scss';
 import Banner from "../banner/banner.component.jsx";
 import Carousel from '../carousel/carousel.component.jsx';
 
-const Jumbotron = ({ inverted }) => (
+const Jumbotron = (props) => (
     <div className='box'>
 
-        {inverted && <Banner />}
+        {props.inverted && <Banner title={props.title} subtitle={props.subtitle}/>}
 
-        <Carousel  correction={inverted}/>
+        <Carousel  correction={props.inverted}/>
 
-        {!inverted && <Banner />}
+        {!props.inverted && <Banner title={props.title} subtitle={props.subtitle}/>}
     </div>
 );
 
