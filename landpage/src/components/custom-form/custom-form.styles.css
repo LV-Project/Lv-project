@@ -1,64 +1,122 @@
-.contact-me{
+.contact-me {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     height: 500px;
+    position: relative;
 }
 
-#contact-me{
+#contact-me {
     visibility: hidden;
     opacity: 0%;
-    transition: opacity 0.9s ease-in-out;  
+    transition: opacity 0.9s ease-in-out;
 }
 
-#contact-me.fade-in{
+#contact-me.fade-in {
     visibility: visible;
     opacity: 100%;
 }
 
-.form-box{
+.form-box {
     position: relative;
 }
 
-.form-input{
-    margin: 15px;
+.form-input {
     background: none;
-    padding:10px;
-    border-radius: .5rem;
+    padding: 10px;
+    border-radius: 0.5rem;
+    color: tomato;
+    height: 20%;
+}
+
+.requirements {
     color: tomato;
 }
 
-.personal-info{
+.personal-info {
+    width: 700px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+    position: relative;
 }
 
-textarea{
-    width: 50%;
-    background:none;
-    padding:50px;
+textarea {
+    width: 900px;
+    background: none;
+    padding: 50px;
     color: tomato;
     font-size: x-large;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
-.form-title{
-    font-family: 'Ephesis', cursive;
-    color:white;
+.form-title {
+    color: white;
 }
 
-@media only screen and (max-width: 850px) {
-    .personal-info{
+.error {
+    position: absolute;
+    color: tomato;
+    transition: opacity .3s linear;
+}
+
+.first-ex{
+    top: 15px;
+    right: 283px;
+    opacity: 0;
+}
+
+.second-ex{
+    top: 15px;
+    right: 34px;
+    opacity: 0;
+}
+
+.third-ex{
+    top:78px;
+    right: -50px;
+    opacity: 0;
+}
+
+.thanks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: tomato;
+}
+
+@media only screen and (max-width: 1450px) {
+    .personal-info {
         display: flex;
         flex-direction: column;
-        
     }
-    .form-input{
+    .form-input {
         margin: 0px 0 15px 0;
     }
-    .form-title{
+    .form-title {
         margin-bottom: 20px;
     }
-}
+    .first-ex {
+        top:65px;
+        right: 33%;
+    }
+    .second-ex{
+        top:118px;
+        right: 33%;
+    }
+    .third-ex{
+        top:183px;
+        right: 7px;
+    }
+    .personal-info{
+        width: 500px;
+    
+    }
+    textarea{
+        width: 500px;
+    }
+}   

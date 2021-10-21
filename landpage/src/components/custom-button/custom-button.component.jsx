@@ -7,11 +7,11 @@ function CustomButton(props) {
 
     
 
-    return (<div className='business-section'>
+    return (<div className='business-section button-position'>
         <button
             id='button'
             className="glow-on-hover"
-            type="button"
+            type={props.type}
             onClick={() => (props.vanish())}
         >
             {

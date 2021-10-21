@@ -1,72 +1,114 @@
-ul {
+.header {
     list-style-type: none;
-    top:0;
+    top: 0;
     background-color: #171717;
     font-size: large;
     position: fixed;
     z-index: 1;
     display: flex;
-
+    width: 100%;
+    justify-content: space-between;
 }
 
-li {
+.header li {
     padding: 20px;
-    margin-left: ;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    
 }
 
-li a {
-
+.header li a {
     color: white;
     text-align: center;
     text-decoration: none;
     margin: 0;
-    padding:0;
-    
+    padding: 0;
 }
 
-
-li:hover {
+.header li:hover {
     background-color: #332e2e;
 }
 
-.logo{
+.logo {
     float: left;
     background-color: black;
     margin-left: 0;
 }
 
-.logo a{
-    color:white;
+.logo a {
+    color: white;
 }
 
-.logo:hover{
-    border-radius: 0;
+.logo:hover {
     background-color: #FE5F55;
     font-weight: bold;
 }
 
+.fa-terminal {
+    animation-name: parpadeo;
+    animation-duration: .7s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+    49%{
+        opacity:0.9
+    }
+    50% {
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @media only screen and (max-width: 850px) {
-    li {
+    .header li {
         width: 100%;
         margin: 0;
     }
-    ul{
+    header {
         position: static;
         display: flex;
         flex-direction: column;
     }
-    .logo{
-        background-color:#171717 ;
-        
-    }
-    .logo:hover{
-        border-radius: 3rem;
-        font-weight: bold;
+    .logo {
+        background-color: #171717;
     }
 }
-
