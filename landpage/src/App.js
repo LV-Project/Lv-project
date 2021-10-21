@@ -1,9 +1,10 @@
 import './App.css';
 import React, { useState } from 'react';
-import AnimatedBackground from './components/animatedbackground/animatedbackground.component';
 import Jumbotron from './components/jumbotron/jumbotron.component';
-import NavBar from './components/header/header.component';
+import Header from './components/header/header.component';
 import TextContainer from './components/textcontainer/textcontainer.component';
+import Form from './components/custom-form/custom-form.component';
+
 
 
 
@@ -13,14 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
-      <Jumbotron 
-      inverted={true}
-      title='Leonardo Villalba'
-      subtitle='Front-end developer'
-      />
-      <TextContainer />
-      
+      <Header />
+      <Form />
       
     </div>
   );

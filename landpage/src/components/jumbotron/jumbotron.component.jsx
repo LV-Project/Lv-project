@@ -1,5 +1,5 @@
 import React from "react";
-import './jumbotron.styles.scss';
+import './jumbotron.styles.css';
 import Banner from "../banner/banner.component.jsx";
 import Carousel from '../carousel/carousel.component.jsx';
 

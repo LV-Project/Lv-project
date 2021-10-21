@@ -1,18 +1,28 @@
 .text-box{
     margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .text-container{
     width: 70%;
-    height: auto;
+    min-height: 50vh;
+    max-height: auto;
     margin:0 auto 20px;
-    background-color:#292322;
+    background-color:rgba(41, 35, 34, 0);
     color:white;
     border-radius: 0.5rem;
-    padding: 50px 90px;
+    padding: 50px 120px;
     text-align: justify;
     -webkit-box-shadow: -50px 0px 36px 3px #000000; 
     box-shadow: -50px 0px 36px 3px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
 .text-container p:first-child::first-letter{
@@ -27,11 +37,11 @@
 
 .text-container p {
     font-size: x-large;
-
+   
 }
 
 .colored {
-    background-color: white;
+    background-color: rgba(253, 223, 215, 0.788);
     color: black;
     -webkit-box-shadow: 50px 0px 36px 3px #000000; 
     box-shadow: 50px 0px 36px 3px #000000;
@@ -41,4 +51,13 @@
     color: white;
     background-color: #FE5F55;
     letter-spacing: .25rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .text-box{
+        min-width: 550px;
+        margin: 0 5%;
+        
+    }
+    
 }
