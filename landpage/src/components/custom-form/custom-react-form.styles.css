@@ -64,3 +64,8 @@ input:disabled {
     border-color: tomato;
     background:rgba(209, 84, 62, 0.678);
 }
+
+.fa-check-circle{
+    font-size: 200px;
+    color: tomato;
+}
