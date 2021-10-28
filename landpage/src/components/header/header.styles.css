@@ -1,25 +1,27 @@
 .header {
     list-style-type: none;
-    top: 0;
     background-color: #171717;
     font-size: large;
-    position: fixed;
     z-index: 1;
     display: flex;
     width: 100%;
     justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+    text-align: center;
+    position: fixed;
+    top: 0;
 }
 
 .header li {
     padding: 20px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .header li a {
     color: white;
-    text-align: center;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -40,14 +42,14 @@
 }
 
 .logo:hover {
-    background-color: #FE5F55;
+    background-color: #fe5f55;
     font-weight: bold;
 }
 
 .fa-terminal {
     animation-name: parpadeo;
-    animation-duration: .7s;
-    animation-timing-function:linear;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 
     -webkit-animation-name: parpadeo;
@@ -84,13 +86,13 @@
     0% {
         opacity: 1;
     }
-    49%{
-        opacity:0.9
+    49% {
+        opacity: 0.9;
     }
     50% {
         opacity: 0;
     }
-    99%{
+    99% {
         opacity: 0;
     }
     100% {
@@ -101,14 +103,8 @@
 @media only screen and (max-width: 850px) {
     .header li {
         width: 100%;
-        margin: 0;
     }
-    header {
-        position: static;
-        display: flex;
+    .header {
         flex-direction: column;
-    }
-    .logo {
-        background-color: #171717;
     }
 }
