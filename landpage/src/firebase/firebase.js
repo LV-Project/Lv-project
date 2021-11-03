@@ -18,7 +18,6 @@ export const createMessage= async (data) => {
 
     const message = firestore.doc(`messages/${data.email}`);
     
-
     const {fullName, email, company, project} = data;
     const createdAt = new Date();
 

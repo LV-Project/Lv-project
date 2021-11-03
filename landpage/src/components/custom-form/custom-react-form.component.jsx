@@ -30,17 +30,18 @@ export default function ReactForm() {
             {!isSubmitSuccessful?<form id='contact-me' className='contact-me' onSubmit={handleSubmit(onSubmit)}>
                 <h1 className='formTitle'>&nbsp;Tell me about your project...</h1>
                 <input
-                    placeholder={!errors.fullName ? 'Full Name' : 'This field is required.'}
+                    placeholder='Full Name'
                     className={!errors.fullName ? ' ' : 'required'}
                     {...register('fullName', { required: true })}
                 />
+                <span>{!errors.fullName ? ' ' : <i class="fas fa-exclamation exclamation-name"></i>}</span>
                 <input
                     placeholder='Company Name (optional)'
                     {...register('company')}
                 />
                 <input
                     name="email"
-                    placeholder={!errors.email ? 'Email' : 'Please enter a valid email.'}
+                    placeholder='Email'
                     className={!errors.email ? ' ' : 'required'}
                     {...register('email', {
                         required: true,
@@ -50,12 +51,14 @@ export default function ReactForm() {
                         }
                     })}
                 />
+                <span>{!errors.email ? ' ' : <i class="fas fa-exclamation exclamation-email"></i>}</span>
                 <textarea
                     {...register('project', { required: true })}
                     placeholder={!errors.project ? ' ' : 'This field is required.'}
                     className={!errors.project ? ' ' : 'required'}
                     rows="10" cols="75"
                 />
+                <span>{!errors.project ? ' ' : <i class="fas fa-exclamation exclamation-project"></i>}</span>
                 <SubmitButton></SubmitButton>
                 
             </form>:<div className='formTitle'><h1 className='formTitle'>Thank you, I'll be in touch shortly.</h1><i class="far fa-check-circle"></i></div>}

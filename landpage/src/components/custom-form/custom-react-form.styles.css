@@ -1,6 +1,6 @@
 form {
     max-width: 900px;
-    margin: 0 auto;
+    margin: auto;
     color:white;
     display: flex;
     flex-direction: column;
@@ -52,20 +52,38 @@ input:disabled {
     opacity: 0.4;
 }
 
-
-
 .required::placeholder{
-    text-decoration: underline;
+    
     opacity: .7;
     color: tomato;
 }
 
 .required{
     border-color: tomato;
-    background:rgba(209, 84, 62, 0.678);
+    
 }
 
 .fa-check-circle{
     font-size: 200px;
     color: tomato;
+}
+
+.fa-exclamation{
+    position: absolute;
+    color: tomato;
+}
+
+.exclamation-name {
+    right: 200px;
+    top: 105px;
+}
+
+.exclamation-email {
+    right: 200px;
+    top: 205px;
+}
+
+.exclamation-project {
+    right: 200px;
+    top: 405px;
 }

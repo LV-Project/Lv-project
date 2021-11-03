@@ -14,17 +14,18 @@
 }
 
 .header li {
-    padding: 20px;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30%;
 }
 
 .header li a {
     color: white;
     text-decoration: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 .header li:hover {
@@ -33,7 +34,6 @@
 
 .logo {
     float: left;
-    background-color: black;
     margin-left: 0;
 }
 
@@ -44,6 +44,10 @@
 .logo:hover {
     background-color: #fe5f55;
     font-weight: bold;
+}
+
+.black-background{
+    background-color: black;
 }
 
 .fa-terminal {
