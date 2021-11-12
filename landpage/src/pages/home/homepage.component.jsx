@@ -3,10 +3,10 @@ import TextContainer from "../../components/textcontainer/textcontainer.componen
 import './homepage.styles.css'
 import ReactForm from '../../components/custom-form/custom-react-form.component.jsx';
 
-function Home() {
+function Home(props) {
     return (<div>
-        <TextContainer />
-        <ReactForm />
+        <TextContainer lightMode={props.lightMode}/>
+        <ReactForm lightMode={props.lightMode}/>
         </div>
     );
 }

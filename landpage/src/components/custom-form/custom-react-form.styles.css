@@ -1,6 +1,12 @@
+.security-box{
+    position: relative;
+    height: 55vh;
+    margin: 0;
+}
+
 form {
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto;
     color:white;
     display: flex;
     flex-direction: column;

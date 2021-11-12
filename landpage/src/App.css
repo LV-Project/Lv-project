@@ -5,26 +5,24 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
     line-height: 1.6;
-    color:white;
-    font-family: 'Source Code Pro', monospace;
-    background-color: #171717;
-    
+    color: white;
+    font-family: "Source Code Pro", monospace !important;
+    background-color: #171717 ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-button{
-    font-family: 'Source Code Pro', monospace;
+button {
+    font-family: "Source Code Pro", monospace;
 }
 
-input{
-    font-family: 'Source Code Pro', monospace;
+input {
+    font-family: "Source Code Pro", monospace;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
-
-    

@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/header/header.component';
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Footer } from './components/footer/footer.component';
 
@@ -10,14 +10,16 @@ const Collection = lazy(() => import('./pages/collection/collection.component.js
 
 function App() {
 
+  const [lightMode, setLightMode]=useState(false);
+
   return (
     <Router>
       <Suspense fallback={<div>loading...</div>}>
         <div className="App">
-          <Header />
+          <Header setLightMode={setLightMode} lightMode={lightMode}/>
           <Switch>
-            <Route exact path='/' component={Home}></Route>
-            <Route exact path='/things-you-might-want' component={Collection}></Route>
+            <Route exact path='/' ><Home lightMode={lightMode}/></Route>
+            <Route exact path='/things-you-might-want'><Collection lightMode={lightMode}/></Route>
           </Switch>
           <Footer />
         </div>

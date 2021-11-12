@@ -6,6 +6,10 @@
     flex-direction: column;
 }
 
+.light{
+    color:black !important;
+}
+
 .text-container {
     width: 90%;
     min-height: 25vh;
@@ -13,7 +17,6 @@
     color: white;
     border-radius: 0.5rem;
     padding: 2% 10%;
-    
     display: flex;
     align-items: center;
     justify-content: center;

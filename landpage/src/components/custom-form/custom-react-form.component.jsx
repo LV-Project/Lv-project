@@ -7,8 +7,8 @@ import SubmitButton from "../submit-button/submit-button.component";
 import './custom-react-form.styles.css';
 
 
-export default function ReactForm() {
-    const { register, handleSubmit, watch, formState } = useForm();
+export default function ReactForm(props) {
+    const { register, handleSubmit, formState } = useForm();
     const { errors, isSubmitSuccessful } = formState;
     
     const onSubmit = (data) => {
@@ -24,11 +24,11 @@ export default function ReactForm() {
     }
 
     return (
-        <div>
+        <div className='security-box'>
             <CustomButton vanish={vanish}> CONTACT ME</CustomButton>
             
             {!isSubmitSuccessful?<form id='contact-me' className='contact-me' onSubmit={handleSubmit(onSubmit)}>
-                <h1 className='formTitle'>&nbsp;Tell me about your project...</h1>
+                <h1 className={`formTitle ${props.lightMode?'light':null}`}>&nbsp;Tell me about your project...</h1>
                 <input
                     placeholder='Full Name'
                     className={!errors.fullName ? ' ' : 'required'}

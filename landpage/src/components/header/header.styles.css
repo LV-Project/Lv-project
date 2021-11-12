@@ -1,3 +1,5 @@
+
+
 .header {
     list-style-type: none;
     background-color: #171717;
@@ -18,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 100%;
 }
 
 .header li a {
@@ -26,9 +28,14 @@
     text-decoration: none;
     margin: 0;
     padding: 20px;
+    width:100%;
 }
 
-.header li:hover {
+.header li:nth-child(1):hover {
+    background-color: #332e2e;
+}
+
+.header li:nth-child(2):hover {
     background-color: #332e2e;
 }
 
