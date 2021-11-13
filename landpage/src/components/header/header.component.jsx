@@ -28,8 +28,8 @@ function Header(props) {
     }
 
     return (<ul className='header'>
-        <li className={`logo ${pathname === '/' ? 'black-background' : null}`}>
-            <Link to='/'>
+        <li className={`logo ${pathname === '/Lv-project' ? 'black-background' : null}`}>
+            <Link to='/Lv-project'>
                 <i class="fas fa-terminal"></i> Leonardo Villalba
             </Link>
         </li>

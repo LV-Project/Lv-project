@@ -16,7 +16,7 @@ function App() {
         <div className="App">
           <Header setLightMode={setLightMode} lightMode={lightMode}/>
           <Switch>
-            <Route exact path='/' ><Home lightMode={lightMode}/></Route>
+            <Route exact path='/Lv-project' ><Home lightMode={lightMode}/></Route>
             <Route exact path='/things-you-might-want'><Collection lightMode={lightMode}/></Route>
           </Switch>
           <Footer />
