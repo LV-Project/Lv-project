@@ -5,3 +5,13 @@
    justify-content: space-around;
 }
 
+@media (max-width:600px){
+   .box-container{
+      flex-direction: column;
+      text-align: center;
+   }
+   .views-title{
+      margin-bottom: 20px;
+   }
+}
+

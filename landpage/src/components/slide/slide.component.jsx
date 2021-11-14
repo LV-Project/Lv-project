@@ -54,7 +54,7 @@ function SwipeableTextMobileStepper(props) {
     };
 
     return (<div className='box-container'>
-        <h1 className={`${props.lightMode?'light':null}`}>Standard image carousel</h1>
+        <h1 className={`views-title ${props.lightMode?'light':null}`}>Standard image carousel</h1>
         <Box sx={{ maxWidth: 990, flexGrow: 1, }}>
             <Paper
                 square

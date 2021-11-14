@@ -97,4 +97,11 @@
     .marquee:after {
         width: 5rem;
     }
+    .carousel-box{
+        margin: 200px auto 30px;
+        flex-direction: column;  
+    }
+    .carousel-title{
+        margin-bottom:20px; 
+    } 
 }
