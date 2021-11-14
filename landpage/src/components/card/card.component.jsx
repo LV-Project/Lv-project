@@ -13,9 +13,9 @@ function Card(props) {
             setProgress(0);
         }
     }
-
+ 
     return <div className='card-container'>
-        <h1 className={`${props.lightMode?'light':null}`}>Cards</h1>
+        <h1 className={`card-title ${props.lightMode?'light':null}`}>Cards</h1>
         <div className="courses-container">
             <div className="course">
                 <div class="course-preview">
@@ -33,9 +33,9 @@ function Card(props) {
                             {progress/10}/10 Challenges
                         </span>
                     </div>
-                    <h6>Chapter 4</h6>
+                    <h6 className='chapter'>Chapter 4</h6>
                     <h2>Callbacks & Closures</h2>
-                    <button className="btn" onClick={handleClick}>Progress</button>
+                    <button className="btn" onClick={handleClick}>Click me!</button>
                 </div>
             </div>
         </div>

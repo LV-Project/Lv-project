@@ -15,10 +15,9 @@
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     display: flex;
-    max-width: 100%;
+    width: 100%;
     margin: 20px;
     overflow: hidden;
-    width: 700px;
 }
 
 .course h6 {
@@ -111,4 +110,14 @@
     background-color:black;
 }
 
-/* SOCIAL PANEL CSS */
+@media (max-width:600px){
+    .card-container{
+        flex-direction: column;
+    }
+    .card-title{
+        margin-bottom: 20px;
+    }
+    .chapter{
+        visibility: hidden;
+    }
+}
