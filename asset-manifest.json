@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Lv-project/static/css/main.9b15a5d5.chunk.css",
+    "main.css": "/Lv-project/static/css/main.1bae13c1.chunk.css",
     "main.js": "/Lv-project/static/js/main.6ca519c0.chunk.js",
     "main.js.map": "/Lv-project/static/js/main.6ca519c0.chunk.js.map",
     "runtime-main.js": "/Lv-project/static/js/runtime-main.7dd37655.js",
@@ -10,13 +10,13 @@
     "static/js/3.b3b076d5.chunk.js": "/Lv-project/static/js/3.b3b076d5.chunk.js",
     "static/js/3.b3b076d5.chunk.js.map": "/Lv-project/static/js/3.b3b076d5.chunk.js.map",
     "index.html": "/Lv-project/index.html",
-    "static/css/main.9b15a5d5.chunk.css.map": "/Lv-project/static/css/main.9b15a5d5.chunk.css.map",
+    "static/css/main.1bae13c1.chunk.css.map": "/Lv-project/static/css/main.1bae13c1.chunk.css.map",
     "static/js/2.c1938ad1.chunk.js.LICENSE.txt": "/Lv-project/static/js/2.c1938ad1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7dd37655.js",
     "static/js/2.c1938ad1.chunk.js",
-    "static/css/main.9b15a5d5.chunk.css",
+    "static/css/main.1bae13c1.chunk.css",
     "static/js/main.6ca519c0.chunk.js"
   ]
 }
