@@ -13,7 +13,7 @@ function Card(props) {
             setProgress(0);
         }
     }
- 
+
     return <div className='card-container'>
         <h1 className={`card-title ${props.lightMode?'light':null}`}>Cards</h1>
         <div className="courses-container">

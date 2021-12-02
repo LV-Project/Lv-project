@@ -9,6 +9,8 @@
     justify-content: space-around;
 }
 
+
+
 .course {
     background-color: tomato;
     border: 10px solid tomato;
@@ -110,12 +112,26 @@
     background-color:black;
 }
 
-@media (max-width:600px){
+@media screen and (max-width:800px){
     .card-container{
         flex-direction: column;
+        margin-bottom: 0px;
+        justify-content: center;
     }
-    .card-title{
-        margin-bottom: 20px;
+    .course{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        
+    }
+    .course-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+    }
+    .btn{
+        position:static;
     }
     .chapter{
         visibility: hidden;

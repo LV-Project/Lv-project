@@ -6,7 +6,7 @@ import './collection.styles.css';
 import { Grid } from '../../components/grid/grid.component.jsx';
 
 function Collection(props) {
-
+ 
 
 
     return (

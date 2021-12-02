@@ -17,22 +17,22 @@ const images = [
     {
         label: 'Random image 1',
         imgPath:
-            'https://picsum.photos/601',
+            'https://picsum.photos/601/450',
     },
     {
         label: 'Random image 2',
         imgPath:
-            'https://picsum.photos/602',
+            'https://picsum.photos/602/450',
     },
     {
         label: 'Random image 3',
         imgPath:
-            'https://picsum.photos/603',
+            'https://picsum.photos/603/450',
     },
     {
         label: 'Random image 4',
         imgPath:
-            'https://picsum.photos/604',
+            'https://picsum.photos/604/450',
     },
 ];
 

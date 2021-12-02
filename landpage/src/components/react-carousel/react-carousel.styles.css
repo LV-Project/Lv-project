@@ -23,6 +23,7 @@
     margin: 180px;
     display: flex;
     align-items: center;
+    
 }
 
 .marquee {
@@ -86,10 +87,10 @@
     border: 2px solid #eee;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 800px) {
     
     :root {
-        --marquee-width: 100vw;
+        --marquee-width: 80vw;
         --marquee-height: 16vh;
         --marquee-elements-displayed: 3;
     }
@@ -98,10 +99,13 @@
         width: 5rem;
     }
     .carousel-box{
-        margin: 200px auto 30px;
+        margin: 200px auto 0px;
         flex-direction: column;  
     }
     .carousel-title{
         margin-bottom:20px; 
     } 
+    .marquee-content li{
+        font-size: 55px;
+    }
 }

@@ -4,7 +4,7 @@
     list-style-type: none;
     background-color: #171717;
     font-size: large;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -13,6 +13,7 @@
     text-align: center;
     position: fixed;
     top: 0;
+    flex-shrink: 0;
 }
 
 .header li {
@@ -33,15 +34,18 @@
 
 .header li:nth-child(1):hover {
     background-color: #332e2e;
+    clip-path: polygon(100% 0, 100% 52%, 90% 100%, 0 100%, 0 0);
 }
 
 .header li:nth-child(2):hover {
     background-color: #332e2e;
+    clip-path: polygon(100% 0, 100% 100%, 10% 100%, 0 52%, 0 0);
 }
 
 .logo {
     float: left;
     margin-left: 0;
+    clip-path: polygon(100% 0, 100% 52%, 90% 100%, 0 100%, 0 0);
 }
 
 .logo a {
@@ -117,5 +121,6 @@
     }
     .header {
         flex-direction: column;
+        background-color: rgb(15, 15, 15);
     }
 }
